@@ -1,0 +1,63 @@
+.cell {
+	background: #ddd;
+	vertical-align: middle;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 24px;
+	height: 24px;
+	margin-right: -1px;
+	margin-top: -1px;
+	padding: 0;
+	text-align: center;
+	width: 24px;
+	&.unrevealed {
+	  border: 2px outset #ececec;
+	  &:active {
+		border: 2px inset #ececec;
+	  };  
+	};
+	&.revealed {
+	  border: 1px solid #999;
+	  &.KABOOM {
+		background-color: red;
+	  };
+	  &.neighbours-0 {
+		color:transparent;
+	  };
+	  &.neighbours-1 {
+		color: #0000ff;
+	  }
+	  &.neighbours-2 {
+		color: #008100;
+	  }
+	  &.neighbours-3 {
+		color: #ff1300;
+	  }
+	  &.neighbours-4 {
+		color: #000083;
+	  }
+	  &.neighbours-5 {
+		color: #810500;
+	  }
+	  &.neighbours-6 {
+		color: #2a9494;
+	  }
+	  &.neighbours-7 {
+		color: #000000;
+	  }
+	  &.neighbours-8 {
+		color: #808080;
+	  }
+	  &:focus {
+		outline: none;
+	  }
+	};
+  }
+
+
+  body {
+	min-height: 100vh;
+	// strange margin behaviour thing cancelling
+	padding: 1px; box-sizing: border-box;
+	background: teal url(https://assets.codepen.io/15664/bliss.jpg) center / cover no-repeat;
+}
